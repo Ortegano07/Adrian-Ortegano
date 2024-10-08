@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(245, 247, 247);
+  font-family: cursive;
+}
+button {
+  font-family: cursive;
+  font-size: 20px;
+  background-color: rgb(78, 182, 185);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 5px solid rgb(78, 182, 185);
+  padding: 5px5px;
+
+}
+button:hover {
+  background-color: rgb(245, 243, 243);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 5px solid rgb(255, 255, 255);
+  padding: 5px5px;
+}
+
+table {
+  font-family: cursive;
+  border-collapse: collapse;
+  width: 50%;
+  }
+  table,
+  th,
+  td {
+    font-family: cursive;
+    border: 5px solid rgb(78, 182, 185);
+    text-align: center;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    padding: 5px;
+  }
+  input {
+    display: block;
+  }
+  section {
+    font-family: cursive;
+    border: 5px solid rgb(110, 182, 103);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 50%;
+  }
+  

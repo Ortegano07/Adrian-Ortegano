@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1" />
+    <title>Bodeguero</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="InicialForm">
+    <center><h3>Buenos Días. Bodeguero, ingrese los datos para inciar el día</h3></center>
+    <center><h5>Cantidad inicial de billetes de 10$ <input type="text" id="InicialForm_inbillete10" placeholder=""></input></h5> </center>
+    <center><h5>Cantidad inicial de billetes de 20$ <input type="text" id="InicialForm_inbillete20" placeholder=""></input></h5></center>
+    <center><h5>Cantidad inicial de billetes de 50$ <input type="text" id="InicialForm_inbillete50" placeholder=""></input></h5></center>
+    <center><button id="InicialForm_btContinuar">Continuar</button></center>
+    </section>
+    
+    <section id="mainForm">
+      <center><h3>Bodeguero</h3></center>
+      <center><h5>Cantidad inicial de billetes: <span id="InicialForm_lblbillete10">0</span> de 10$, <span id="InicialForm_lblbillete20">0</span> de 20$, <span id="InicialForm_lblbillete50">0</span> de 50$</h5></center>
+      <center><table id="mainForm_table"></center>
+        <tr>
+          <th>Cédula</th>
+          <th>Denominación</th>
+          <th>Cantidad</th>
+          <th>Monto Cuenta</th>
+        </tr>
+      </table>
+      <center><h5>Monto final de billetes de $10: <span id="mainForm_lblMonto10">0</span>$</h5></center>
+      <center><h5>Monto final de billetes de $20: <span id="mainForm_lblMonto20">0</span>$</h5></center>
+      <center><h5>Monto final de billetes de $50: <span id="mainForm_lblMonto50">0</span>$</h5></center>
+      <center><h5>Al bodeguero le queda un monto total de: <span id="mainForm_lbltotalBodeguero">0</span>$</h5></center>
+      <center><button id="mainForm_btAgregar">Agregar Cliente</button> <button id="mainForm_btCancelar">Cancelar</button></center>
+      <center></center>
+    </section>
+
+    <section id="clienteForm">
+      <center><h3>Datos del cliente</h3></center>
+      <center><h5>Cédula <input type="text" id="clienteForm_incedula" placeholder=""></input></h5></center>
+      <center><h5>Denominación del billete <input type="text" id="clienteForm_inDenobillete" placeholder=""></input></h5></center>
+      <center><h5>Cantidad de billetes <input type="text" id="clienteForm_inCantbillete"  placeholder=""></input></h5></center>
+      <center><button id="clienteForm_btAceptar">Aceptar</button></center>
+    </section>
+  </body>
+  <script type="module">
+    import Cl_Controlador from "./js/Cl_Controlador.js";
+    new Cl_Controlador()
+ </script>
+</html>
